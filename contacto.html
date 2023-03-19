@@ -42,8 +42,7 @@
         <h3 class="centrar-texto">Contacto</h3>
 
         <div class="contacto-bg"></div>
-
-        <form class="formulario">
+        <form class="formulario" method="post" action="procesar_formulario.php">
             <div class="campo">
                 <label class="campo__label" for="nombre">Nombre</label>
                 <input 
@@ -51,6 +50,7 @@
                     type="text" 
                     placeholder="Tu Nombre" 
                     id="nombre"
+                    name="nombre"  <!-- Agregar el atributo name -->
                 >
             </div>
             <div class="campo">
@@ -60,6 +60,7 @@
                     type="email" 
                     placeholder="Tu E-mail" 
                     id="email"
+                    name="email"  <!-- Agregar el atributo name -->
                 >
             </div>
             <div class="campo">
@@ -67,13 +68,15 @@
                 <textarea 
                     class="campo__field campo__field--textarea"
                     id="mensaje"
+                    name="mensaje"  <!-- Agregar el atributo name -->
                 ></textarea>
             </div>
-
+        
             <div class="campo">
                 <input type="submit" value="Enviar" class="boton boton--primario">
             </div>
         </form>
+        
 
         
     </main>

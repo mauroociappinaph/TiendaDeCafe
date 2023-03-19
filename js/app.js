@@ -28,20 +28,21 @@
   /* COMPARTIR */ 
 
   const enlaces = document.querySelectorAll('.navegacion__enlace');
-
-enlaces.forEach(enlace => {
-  enlace.addEventListener('click', e => {
-    e.preventDefault(); // prevenimos el comportamiento predeterminado del enlace
-
-    const destino = enlace.getAttribute('href');
-    const seccion = document.querySelector(destino);
-
-    window.scrollTo({
-      top: seccion.offsetTop,
-      behavior: 'smooth' // animación suave
+  const seccion = document.querySelector(destino);
+  
+  enlaces.forEach(enlace => {
+    enlace.addEventListener('click', e => {
+      e.preventDefault(); // prevenimos el comportamiento predeterminado del enlace
+  
+      const destino = enlace.getAttribute('href');
+  
+      window.scrollTo({
+        top: seccion.offsetTop,
+        behavior: 'smooth' // animación suave
+      });
     });
   });
-});
+  
 
 
 /** Este código agrega un evento de clic a cada enlace de navegación 
@@ -73,3 +74,6 @@ del enlace se utiliza para obtener la sección de destino correspondiente. */
     // Abrir una ventana emergente o modal con la imagen en tamaño completo
     window.open('img/blog3.jpg', '_blank');
   });
+
+
+
