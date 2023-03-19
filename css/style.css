@@ -24,9 +24,12 @@ body {
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
+   
 }
 a {
     text-decoration: none;
+  
+
 }
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
@@ -192,6 +195,12 @@ img {
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+    align-items: center;
 }
 
 /** Sobre Nosotros **/
@@ -310,4 +319,72 @@ img {
     }
   }
   
+
+  /** COMPARTIR**/
+  .compartir {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  
+  .compartir__enlace {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #eee;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .compartir__enlace:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .compartir__enlace--facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .compartir__enlace--facebook:hover {
+    background-color: #fff;
+    color: #3b5998;
+  }
+  
+  .compartir__enlace--twitter {
+    background-color: #55acee;
+    color: #fff;
+  }
+  
+  .compartir__enlace--twitter:hover {
+    background-color: #fff;
+    color: #55acee;
+  }
+  
+  .compartir__enlace--linkedin {
+    background-color: #0077b5;
+    color: #fff;
+  }
+  
+  .compartir__enlace--linkedin:hover {
+    background-color: #fff;
+    color: #0077b5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .compartir {
+      flex-wrap: wrap;
+    }
+  
+    .compartir__enlace {
+      flex: 1 0 100%;
+      margin-bottom: 10px;
+    }
+  }
   
