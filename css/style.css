@@ -408,4 +408,16 @@ img {
   .entrada {
     transition: opacity 0.5s, transform 0.5s;
   }
-  
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.con-fondo {
+    background-color: var(--gris);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

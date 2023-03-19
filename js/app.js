@@ -77,3 +77,18 @@ del enlace se utiliza para obtener la sección de destino correspondiente. */
 
 
 
+/*STICKY* */
+const navbar = document.querySelector('.barra');
+const heladeraSection = document.querySelector('#heladera');
+
+let heladeraSectionPosition = heladeraSection.offsetTop + heladeraSection.offsetHeight;
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > heladeraSectionPosition) {
+    navbar.classList.add('sticky');
+    navbar.classList.add('con-fondo');
+  } else {
+    navbar.classList.remove('sticky');
+    navbar.classList.remove('con-fondo');
+  }
+});
