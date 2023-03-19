@@ -49,3 +49,27 @@ y desplaza suavemente la página al destino del enlace cuando se hace clic.
 El código utiliza el método scrollTo para desplazarse suavemente a la 
 sección correspondiente en la página. El atributo href 
 del enlace se utiliza para obtener la sección de destino correspondiente. */
+
+
+/** IMAGENES */
+
+  // Seleccionar cada imagen
+  const imagen1 = document.getElementById('imagen1');
+  const imagen2 = document.getElementById('imagen2');
+  const imagen3 = document.getElementById('imagen3');
+
+  // Agregar un evento de clic a cada imagen
+  imagen1.addEventListener('click', () => {
+    // Abrir una ventana emergente o modal con la imagen en tamaño completo
+    window.open('img/blog1.jpg', '_blank');
+  });
+
+  imagen2.addEventListener('click', () => {
+    // Abrir una ventana emergente o modal con la imagen en tamaño completo
+    window.open('img/blog2.jpg', '_blank');
+  });
+
+  imagen3.addEventListener('click', () => {
+    // Abrir una ventana emergente o modal con la imagen en tamaño completo
+    window.open('img/blog3.jpg', '_blank');
+  });

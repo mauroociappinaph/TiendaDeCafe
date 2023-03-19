@@ -388,3 +388,24 @@ img {
     }
   }
   
+  .animacion-h1 {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .animacion-p {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .entrada {
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  

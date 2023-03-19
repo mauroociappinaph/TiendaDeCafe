@@ -56,51 +56,70 @@
     <div class="contenedor contenido-principal">
         <main class="blog">
             <h3>Nuestro Blog</h3>
-
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">
-                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Tipos de Grano de Café</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
-
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/blog2.webp" type="image/webp">
-                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
-
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/blog3.webp" type="image/webp">
-                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Café</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
+            <div class="contenedor">
+                <article class="entrada">
+                    <div class="entrada__contenedor">
+                      <div class="entrada__imagen">
+                        <picture>
+                          <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                          <img loading="lazy" src="img/blog1.jpg" alt="imagen blog" class="imagen-articulo" id="imagen1">
+                        </picture>
+                      </div>
+                      <div class="entrada__contenido">
+                        <h4 class="no-margin">Tipos de Grano de Café</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                      </div>
+                    </div>
+                  </article>
+              
+                  <article class="entrada">
+                    <div class="entrada__contenedor">
+                      <div class="entrada__imagen">
+                        <picture>
+                          <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                          <img loading="lazy" src="img/blog2.jpg" alt="imagen blog" id="imagen2" onclick="mostrarImagen('img/blog2.jpg')">
+                        </picture>
+                      </div>
+                      <div class="entrada__contenido">
+                        <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                      </div>
+                    </div>
+                  </article>
+                  <script>
+                  function mostrarImagen2() {
+                    var ventana = window.open('img/blog2.jpg');
+                    ventana.focus();
+                  }
+                  </script>
+                  
+                  <article class="entrada">
+                    <div class="entrada__contenedor">
+                      <div class="entrada__imagen">
+                        <picture>
+                          <source loading="lazy"  srcset="img/blog3.webp" type="image/webp">
+                          <img loading="lazy" src="img/blog3.jpg" alt="imagen blog" id="imagen3" onclick="mostrarImagen3('img/blog3.jpg')"> 
+                        </picture>
+                      </div>
+                      <div class="entrada__contenido">
+                        <h4 class="no-margin">Beneficios del Café</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                      </div>
+                    </div>
+                  </article>
+                  <script>
+                  function mostrarImagen3(url) {
+                    var ventana = window.open(url);
+                    ventana.focus();
+                  }
+                  </script>
+                  
+              </div>
+              
+            
         </main>
         <aside class="sidebar">
             <h3>Nuestros Cursos y Talleres</h3>
